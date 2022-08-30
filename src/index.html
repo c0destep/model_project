@@ -1,0 +1,643 @@
+<!doctype html>
+<html class="no-js antialiased scroll-smooth" lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <title>Company</title>
+    <meta content="" name="keywords"/>
+    <meta content="" name="description"/>
+    <meta content="" name="subject">
+    <meta content="" name="copyright">
+    <meta content="pt-br" name="language">
+    <meta content="index,follow" name="robots"/>
+    <meta content="Codestep, codestep@codingstep.com.br" name="author">
+    <meta content="" name="url">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+
+    <meta content="" property="og:title">
+    <meta content="website" property="og:type">
+    <meta content="" property="og:url">
+    <meta content="" property="og:image">
+    <meta content="" name="og:site_name"/>
+    <meta content="" name="og:description"/>
+
+    <link href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" rel="stylesheet"/>
+    <link href="../css/output.css" rel="stylesheet">
+    <link href="../node_modules/@fortawesome/fontawesome-free/css/all.min.css" rel="stylesheet">
+
+    <meta content="#be123c" name="theme-color">
+
+    <style>
+        #ukraine {
+            background: linear-gradient(-180deg, #005bbb 50%, #ffd500 0);
+            bottom: 10px;
+            height: 42px;
+            left: -40px;
+            position: fixed;
+            transform: rotate(45deg);
+            width: 150px;
+            z-index: 999;
+        }
+    </style>
+</head>
+
+<body id="top">
+<div class="w-full bg-gray-900 dark:bg-gray-800 text-center py-3">
+    <span
+        class="bg-gradient-to-r from-[#005bbb] to-[#ffd500] bg-clip-text text-transparent text-4xl font-extrabold">
+        Slava Ukrayini! Heroyam slava!
+    </span>
+</div>
+
+<nav class="sticky top-0 w-full border-b dark:border-b-gray-800 bg-gray-50 dark:bg-gray-900 z-10">
+    <div class="py-5 md:py-0 container mx-auto px-6 flex items-center justify-between">
+        <div aria-label="Company" role="img">
+            <svg class="fill-rose-700" fill="none" height="44" viewBox="0 0 53 44" width="52"
+                 xmlns="http://www.w3.org/2000/svg">
+                <path
+                    d="M23.2997 0L52.0461 28.6301V44H38.6311V34.1553L17.7522 13.3607L13.415 13.3607L13.415 44H0L0 0L23.2997 0ZM38.6311 15.2694V0L52.0461 0V15.2694L38.6311 15.2694Z"></path>
+            </svg>
+        </div>
+        <div>
+            <button
+                class="sm:block md:hidden text-gray-500 dark:text-gray-300 hover:text-gray-700 focus:text-gray-700 focus:outline-none focus:ring-2 focus:ring-gray-500"
+                onclick="toggleMenu(true)">
+                <svg aria-haspopup="true" aria-label="open main menu"
+                     class="md:hidden icon icon-tabler icon-tabler-menu" fill="none" height="24"
+                     stroke="currentColor" stroke-linecap="round" stroke-width="1.5" viewBox="0 0 24 24" width="24"
+                     xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0 0h24v24H0z" stroke="none"></path>
+                    <line x1="4" x2="20" y1="8" y2="8"></line>
+                    <line x1="4" x2="20" y1="16" y2="16"></line>
+                </svg>
+            </button>
+            <div class="md:block lg:block hidden" id="menu">
+                <button
+                    class="block md:hidden lg:hidden text-gray-500 dark:text-gray-300 hover:text-gray-700 focus:text-gray-700 fixed focus:outline-none focus:ring-2 focus:ring-gray-500 z-30 top-0 mt-6"
+                    onclick="toggleMenu(false)">
+                    <svg aria-label="close main menu" fill="none" height="24" stroke="currentColor"
+                         stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24"
+                         width="24" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0 0h24v24H0z" stroke="none"/>
+                        <line x1="18" x2="6" y1="6" y2="18"/>
+                        <line x1="6" x2="18" y1="6" y2="18"/>
+                    </svg>
+                </button>
+                <ul
+                    class="flex text-3xl md:text-base items-center py-10 md:flex flex-col md:flex-row justify-center fixed md:relative top-0 bottom-0 left-0 right-0 bg-white dark:bg-gray-900 md:bg-transparent z-20">
+                    <li
+                        class="text-gray-700 dark:text-gray-300 hover:text-gray-900 dark:hover:text-gray-100 cursor-pointer text-base lg:text-lg pt-10 md:pt-0">
+                        <a class="border-b-2 hover:border-b-rose-600 pb-1" href="#services">
+                            Serviços
+                        </a>
+                    </li>
+                    <li
+                        class="text-gray-700 dark:text-gray-300 hover:text-gray-900 dark:hover:text-gray-100 cursor-pointer text-base lg:text-lg pt-10 md:pt-0 md:ml-5 lg:ml-10">
+                        <a class="border-b-2 hover:border-b-rose-600 pb-1" href="#budgets">
+                            Orçamentos
+                        </a>
+                    </li>
+                    <li
+                        class="text-gray-700 dark:text-gray-300 hover:text-gray-900 dark:hover:text-gray-100 cursor-pointer text-base lg:text-lg pt-10 md:pt-0 md:ml-5 lg:ml-10">
+                        <a class="border-b-2 hover:border-b-rose-600 pb-1" href="#contact">
+                            Contato
+                        </a>
+                    </li>
+                    <li
+                        class="text-gray-700 dark:text-gray-300 hover:text-gray-900 dark:hover:text-gray-100 cursor-pointer text-base lg:text-lg pt-10 md:pt-0 md:ml-5 lg:ml-10">
+                        <a class="border-b-2 hover:border-b-rose-600 pb-1" href="#about">
+                            Sobre Nós
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</nav>
+
+<div class="bg-gray-100 dark:bg-gray-900">
+
+    <div class="container mx-auto mb-4">
+        <div class="w-full bg-gray-200 text-center">
+            <div class="swiper slideshow">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img alt="image" src="../images/slide1.png">
+                    </div>
+                    <div class="swiper-slide">
+                        <img alt="image" src="../images/slide2.png">
+                    </div>
+                    <div class="swiper-slide">
+                        <img alt="image" src="../images/slide3.png">
+                    </div>
+                </div>
+                <div class="swiper-button-next text-rose-600"></div>
+                <div class="swiper-button-prev text-rose-600"></div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="2xl:container 2xl:mx-auto lg:py-16 lg:px-20 md:py-12 md:px-6 py-9 px-4 target:scroll-mt-16"
+         id="about">
+        <div class="flex flex-col lg:flex-row justify-between gap-8">
+            <div class="w-full lg:w-6/12 flex flex-col justify-center">
+                <h1 class="text-3xl lg:text-4xl font-bold leading-9 text-gray-800 dark:text-gray-200 pb-4">
+                    Sobre Nós
+                </h1>
+                <p class="font-normal text-base leading-6 text-gray-600 dark:text-gray-500">
+                    As experiências acumuladas demonstram que a alta necessidade de integridade pode nos levar a
+                    considerar a reestruturação do impacto de uma parada total. Não obstante, o crescente aumento da
+                    densidade de “bytes” das mídias assume importantes níveis de uptime da (gerenciamento) de risco.
+                    É
+                    importante
+                    questionar o quanto a necessidade de cumprimento dos SLAs previamente acordados ainda não
+                    demonstrou
+                    convincentemente que está estável o suficiente dos paralelismos em potencial. A implantação, na
+                    prática, prova que a utilização de SSL nas transações comerciais otimiza o uso dos processadores
+                    de
+                    alternativas aos aplicativos convencionais.
+                </p>
+            </div>
+            <div class="w-full lg:w-6/12">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid asperiores aspernatur consectetur
+                cupiditate debitis illo laborum libero magni maxime nobis odio placeat quaerat quidem, rem repudiandae
+                rerum sint, soluta tempore?
+            </div>
+        </div>
+
+        <div class="flex lg:flex-row flex-col justify-between gap-8 pt-12">
+            <div class="w-full lg:w-6/12 flex flex-col justify-center">
+                <h1 class="text-3xl lg:text-4xl font-bold leading-9 text-gray-800 dark:text-gray-200 pb-4">
+                    Nossa História
+                </h1>
+                <p class="font-normal text-base leading-6 text-gray-600 dark:text-gray-500">
+                    Podemos já vislumbrar o modo pelo qual a interoperabilidade de hardware minimiza o gasto de
+                    energia
+                    dos paradigmas de desenvolvimento de “software”. Por outro lado, a adoção de políticas de
+                    segurança da
+                    informação acarreta um processo de reformulação e modernização das ACLs de segurança impostas
+                    pelo
+                    firewall. O empenho em analisar a constante divulgação das informações auxilia no aumento da
+                    segurança e/ou na mitigação dos problemas dos índices pretendidos.
+                </p>
+            </div>
+            <div class="w-full lg:w-6/12 lg:pt-8">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab autem corporis doloremque excepturi facilis
+                ipsum iure, pariatur perferendis reprehenderit vel? Atque consequatur doloremque dolores eaque est in
+                ipsum similique sit.
+            </div>
+        </div>
+    </div>
+
+    <div class="container mx-auto pt-16 target:scroll-mt-16" id="projects">
+        <div class="w-11/12 xl:w-2/3 lg:w-2/3 md:w-2/3 mx-auto sm:mb-10 mb-16">
+            <h1 class="focus:outline-none xl:text-5xl md:text-3xl text-xl text-center text-gray-800 dark:text-gray-200 font-extrabold mb-5 pt-4"
+                tabindex="0">
+                Parcerias com marcas cobiçadas
+            </h1>
+            <p class="focus:outline-none text-base md:text-lg lg:text-xl text-center text-gray-600 dark:text-gray-500 font-normal xl:w-10/12 xl:mx-auto"
+               tabindex="0">
+                Nosso sucesso vem do compromisso com a propriedade e do investimento no desenvolvimento do produto
+                para
+                maximizar as vendas. Ao mesmo tempo, e mantendo a integridade.
+            </p>
+        </div>
+        <div class="xl:py-16 lg:py-16 md:py-16 sm:py-16 px-15 flex flex-wrap">
+            <div
+                class="w-6/12 xl:w-1/4 lg:w-1/4 md:w-1/4 flex justify-center xl:border-b lg:border-b xl:border-r lg:border-r :border-r border-gray-200 dark:border-gray-700 xl:pb-10 pb-16 items-center">
+                <svg class="fill-rose-700" fill="none" height="44" viewBox="0 0 53 44" width="52"
+                     xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M23.2997 0L52.0461 28.6301V44H38.6311V34.1553L17.7522 13.3607L13.415 13.3607L13.415 44H0L0 0L23.2997 0ZM38.6311 15.2694V0L52.0461 0V15.2694L38.6311 15.2694Z"></path>
+                </svg>
+            </div>
+            <div
+                class="w-6/12 xl:w-1/4 lg:w-1/4 md:w-1/4 flex justify-center xl:border-b lg:border-b xl:border-r lg:border-r border-gray-200 dark:border-gray-700 xl:pb-10 pb-16 items-center">
+                <svg class="fill-rose-700" fill="none" height="44" viewBox="0 0 53 44" width="52"
+                     xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M23.2997 0L52.0461 28.6301V44H38.6311V34.1553L17.7522 13.3607L13.415 13.3607L13.415 44H0L0 0L23.2997 0ZM38.6311 15.2694V0L52.0461 0V15.2694L38.6311 15.2694Z"></path>
+                </svg>
+            </div>
+            <div
+                class="w-6/12 xl:w-1/4 lg:w-1/4 md:w-1/4 flex justify-center xl:border-b lg:border-b border-gray-200 dark:border-gray-700 xl:pb-10 pb-16 pt-4 items-center">
+                <svg class="fill-rose-700" fill="none" height="44" viewBox="0 0 53 44" width="52"
+                     xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M23.2997 0L52.0461 28.6301V44H38.6311V34.1553L17.7522 13.3607L13.415 13.3607L13.415 44H0L0 0L23.2997 0ZM38.6311 15.2694V0L52.0461 0V15.2694L38.6311 15.2694Z"></path>
+                </svg>
+            </div>
+            <div
+                class="w-6/12 xl:w-1/4 lg:w-1/4 md:w-1/4 flex justify-center lg:border-b xl:border-b lg:border-l xl:border-l border-gray-200 dark:border-gray-700 xl:pb-10 pb-16 items-center">
+                <svg class="fill-rose-700" fill="none" height="44" viewBox="0 0 53 44" width="52"
+                     xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M23.2997 0L52.0461 28.6301V44H38.6311V34.1553L17.7522 13.3607L13.415 13.3607L13.415 44H0L0 0L23.2997 0ZM38.6311 15.2694V0L52.0461 0V15.2694L38.6311 15.2694Z"></path>
+                </svg>
+            </div>
+            <div
+                class="w-6/12 xl:w-1/4 lg:w-1/4 md:w-1/4 flex justify-center xl:border-r lg:border-r border-gray-200 dark:border-gray-700 xl:pt-10 items-center">
+                <svg class="fill-rose-700" fill="none" height="44" viewBox="0 0 53 44" width="52"
+                     xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M23.2997 0L52.0461 28.6301V44H38.6311V34.1553L17.7522 13.3607L13.415 13.3607L13.415 44H0L0 0L23.2997 0ZM38.6311 15.2694V0L52.0461 0V15.2694L38.6311 15.2694Z"></path>
+                </svg>
+            </div>
+            <div
+                class="w-6/12 xl:w-1/4 lg:w-1/4 md:w-1/4 flex justify-center xl:border-r lg:border-r border-gray-200 dark:border-gray-700 xl:pt-10 items-center">
+                <svg class="fill-rose-700" fill="none" height="44" viewBox="0 0 53 44" width="52"
+                     xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M23.2997 0L52.0461 28.6301V44H38.6311V34.1553L17.7522 13.3607L13.415 13.3607L13.415 44H0L0 0L23.2997 0ZM38.6311 15.2694V0L52.0461 0V15.2694L38.6311 15.2694Z"></path>
+                </svg>
+            </div>
+            <div class="w-6/12 xl:w-1/4 lg:w-1/4 md:w-1/4 flex justify-center xl:pt-10 lg:pt-10 md:pt-2 pt-16">
+                <svg class="fill-rose-700" fill="none" height="44" viewBox="0 0 53 44" width="52"
+                     xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M23.2997 0L52.0461 28.6301V44H38.6311V34.1553L17.7522 13.3607L13.415 13.3607L13.415 44H0L0 0L23.2997 0ZM38.6311 15.2694V0L52.0461 0V15.2694L38.6311 15.2694Z"></path>
+                </svg>
+            </div>
+            <div
+                class="w-6/12 xl:w-1/4 lg:w-1/4 md:w-1/4 flex justify-center xl:border-l lg:border-l border-gray-200 dark:border-gray-700 xl:pt-10 lg:pt-10 md:pt-2 pt-16">
+                <svg class="fill-rose-700" fill="none" height="44" viewBox="0 0 53 44" width="52"
+                     xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M23.2997 0L52.0461 28.6301V44H38.6311V34.1553L17.7522 13.3607L13.415 13.3607L13.415 44H0L0 0L23.2997 0ZM38.6311 15.2694V0L52.0461 0V15.2694L38.6311 15.2694Z"></path>
+                </svg>
+            </div>
+        </div>
+    </div>
+
+    <div class="container flex justify-center mx-auto pt-16 target:scroll-mt-16" id="services">
+        <div>
+            <p class="text-gray-500 text-lg text-center font-normal pb-3">
+                Nossos Trabalhos
+            </p>
+            <h1 class="xl:text-4xl text-3xl text-center text-gray-800 dark:text-gray-200 font-extrabold pb-6 sm:w-4/6 w-5/6 mx-auto">
+                Projetos que já realizamos pelo DF
+            </h1>
+        </div>
+    </div>
+    <div class="w-full px-10 pt-10">
+        <div class="container mx-auto">
+            <div aria-label="Time de Devs"
+                 class="lg:flex md:flex sm:flex items-center xl:justify-between flex-wrap md:justify-around sm:justify-around lg:justify-around"
+                 role="list">
+                <div class="xl:w-1/3 sm:w-3/4 md:w-2/5 relative mt-16 mb-32 sm:mb-24 xl:max-w-sm lg:w-2/5"
+                     role="listitem">
+                    <div class="rounded overflow-hidden shadow-md bg-white dark:bg-gray-800">
+                        <div class="px-6 mt-16 mb-6">
+                            <h1 class="font-bold text-3xl text-center mb-1 dark:text-gray-50">
+                                Viaduto do Catetinho
+                            </h1>
+                            <p class="text-gray-800 dark:text-gray-200 text-sm text-center">
+                                28/08/2000
+                            </p>
+                            <p class="text-center text-gray-600 dark:text-gray-500 text-base pt-3 font-normal">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias eius optio quibusdam
+                                quisquam veniam. Cum eius eveniet hic maiores nam, officiis quam quisquam quo
+                                repellendus saepe sint sunt vel voluptate!
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="xl:w-1/3 lg:mx-3 sm:w-3/4 md:w-2/5 relative mt-16 mb-32 sm:mb-24 xl:max-w-sm lg:w-2/5"
+                     role="listitem">
+                    <div class="rounded overflow-hidden shadow-md bg-white dark:bg-gray-800">
+                        <div class="px-6 mt-16 mb-6">
+                            <h1 class="font-bold text-3xl text-center mb-1 dark:text-gray-50">
+                                Revitalização da W3 Sul
+                            </h1>
+                            <p class="text-gray-800 dark:text-gray-200 text-sm text-center">
+                                27/08/2022
+                            </p>
+                            <p class="text-center text-gray-600 dark:text-gray-500 text-base pt-3 font-normal">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum deserunt expedita fuga
+                                libero quae, reprehenderit vero. A accusantium adipisci aut ducimus eos laudantium
+                                nesciunt, officiis quis, recusandae reprehenderit sed ullam!
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="xl:w-1/3 sm:w-3/4 md:w-2/5 relative mt-16 mb-32 sm:mb-24 xl:max-w-sm lg:w-2/5"
+                     role="listitem">
+                    <div class="rounded overflow-hidden shadow-md bg-white dark:bg-gray-800">
+                        <div class="px-6 mt-16 mb-6">
+                            <h1 class="font-bold text-3xl text-center mb-1 dark:text-gray-50">
+                                Paisagismo na L2 Norte
+                            </h1>
+                            <p class="text-gray-800 dark:text-gray-200 text-sm text-center">
+                                06/05/2020
+                            </p>
+                            <p class="text-center text-gray-600 dark:text-gray-500 text-base pt-3 font-normal">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad adipisci, aliquam
+                                doloremque eaque excepturi facilis itaque laborum nesciunt nulla odit officiis, placeat
+                                praesentium qui quo rem, rerum sit vel voluptate.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="max-w-8xl mx-auto container pt-16 target:scroll-mt-16" id="skills">
+        <div>
+            <div class="flex items-center flex-col px-4" role="contentinfo">
+                <p class="focus:outline-none uppercase text-sm text-center text-gray-600 dark:text-gray-500 leading-4"
+                   tabindex="0">
+                    Habilidades do nosso time
+                </p>
+                <h1 class="focus:outline-none text-4xl lg:text-4xl font-extrabold text-center leading-10 text-gray-800 dark:text-gray-200 lg:w-5/12 md:w-9/12 pt-4"
+                    tabindex="0">
+                    Criando belas páginas Institucionais e Aplicações em um piscar de dedos
+                </h1>
+            </div>
+            <div aria-label="group of cards"
+                 class="focus:outline-none mt-20 flex flex-wrap justify-center gap-10 px-4" tabindex="0">
+                <div aria-label="card 1" class="focus:outline-none flex sm:w-full md:w-5/12 pb-20" tabindex="0">
+                    <div class="w-20 h-20 relative mr-5">
+                        <div class="absolute top-0 right-0 bg-rose-100 rounded w-16 h-16 mt-2 mr-1">
+                        </div>
+                        <div
+                            class="absolute text-white bottom-0 left-0 bg-rose-700 rounded w-16 h-16 flex items-center justify-center mt-2 mr-3">
+                            <img alt="drawer"
+                                 src="https://tuk-cdn.s3.amazonaws.com/can-uploader/icon_and_text-SVG1.svg">
+                        </div>
+                    </div>
+                    <div class="w-10/12">
+                        <h2 class="focus:outline-none text-lg font-bold leading-tight text-gray-800 dark:text-gray-200"
+                            tabindex="0">
+                            Componentes já criados por nós
+                        </h2>
+                        <p class="focus:outline-none text-base text-gray-600 dark:text-gray-500 leading-normal pt-2"
+                           tabindex="0">
+                            Fornecendo um início rápido e muito simples, não há necessidade de esperar meses, basta
+                            entendermos o seu negócio e criar os que precisa.
+                        </p>
+                    </div>
+                </div>
+                <div aria-label="card 2" class="focus:outline-none flex sm:w-full md:w-5/12 pb-20" tabindex="0">
+                    <div class="w-20 h-20 relative mr-5">
+                        <div class="absolute top-0 right-0 bg-rose-100 rounded w-16 h-16 mt-2 mr-1"></div>
+                        <div
+                            class="absolute text-white bottom-0 left-0 bg-rose-700 rounded w-16 h-16 flex items-center justify-center mt-2 mr-3">
+                            <img alt="check"
+                                 src="https://tuk-cdn.s3.amazonaws.com/can-uploader/icon_and_text-SVG2.svg">
+                        </div>
+                    </div>
+                    <div class="w-10/12">
+                        <h2 class="focus:outline-none text-lg font-semibold leading-tight text-gray-800 dark:text-gray-200"
+                            tabindex="0">
+                            Pontos de SEO garantidos
+                        </h2>
+                        <p class="focus:outline-none text-base text-gray-600 dark:text-gray-500 leading-normal pt-2"
+                           tabindex="0">
+                            Temos o melhor analisador de SEO já empregado em desenvolvimento projetado por Tri J.
+                        </p>
+                    </div>
+                </div>
+                <div aria-label="card 3" class="focus:outline-none flex sm:w-full md:w-5/12 pb-20" tabindex="0">
+                    <div class="w-20 h-20 relative mr-5">
+                        <div class="absolute top-0 right-0 bg-rose-100 rounded w-16 h-16 mt-2 mr-1"></div>
+                        <div
+                            class="absolute text-white bottom-0 left-0 bg-rose-700 rounded w-16 h-16 flex items-center justify-center mt-2 mr-3">
+                            <img alt="html tag"
+                                 src="https://tuk-cdn.s3.amazonaws.com/can-uploader/icon_and_text-SVG3.svg">
+                        </div>
+                    </div>
+                    <div class="w-10/12">
+                        <h2 class="focus:outline-none text-lg font-semibold leading-tight text-gray-800 dark:text-gray-200"
+                            tabindex="0">
+                            Codigo simples e veloz
+                        </h2>
+                        <p class="focus:outline-none text-base text-gray-600 dark:text-gray-500 leading-normal pt-2"
+                           tabindex="0">
+                            Temos o melhor CleanCode do mercado, com sistemas que visam suporte facilitado para
+                            qualquer
+                            manuteção externa.
+                        </p>
+                    </div>
+                </div>
+                <div aria-label="card 4" class="focus:outline-none flex sm:w-full md:w-5/12 pb-20" tabindex="0">
+                    <div class="w-20 h-20 relative mr-5">
+                        <div class="absolute top-0 right-0 bg-rose-100 rounded w-16 h-16 mt-2 mr-1"></div>
+                        <div
+                            class="absolute text-white bottom-0 left-0 bg-rose-700 rounded w-16 h-16 flex items-center justify-center mt-2 mr-3">
+                            <img alt="monitor"
+                                 src="https://tuk-cdn.s3.amazonaws.com/can-uploader/icon_and_text-SVG4.svg">
+                        </div>
+                    </div>
+                    <div class="w-10/12">
+                        <h2 class="focus:outline-none text-lg font-semibold leading-tight text-gray-800 dark:text-gray-200"
+                            tabindex="0">
+                            Disponibilidade extremamente alta
+                        </h2>
+                        <p class="focus:outline-none text-base text-gray-600 dark:text-gray-500 leading-normal pt-2"
+                           tabindex="0">
+                            Nós construimos pensando na gama enorme de dispositivos que seram atendidos, garantindo
+                            alta
+                            expansão de mercado.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="max-w-8xl mx-auto container pt-16 flex items-center justify-center target:scroll-mt-16"
+         id="budgets">
+        <form action="" class="py-12 lg:px-28 px-8" id="formSendBudget" method="post">
+            <p class="hidden text-xl font-medium text-center text-green-300" id="hasSend"></p>
+            <p class="hidden text-xl font-medium text-center text-red-300" id="hasNotSend"></p>
+            <p class="md:text-3xl text-xl font-bold leading-7 text-center text-gray-800 dark:text-gray-200">
+                Vamos conversar e fazer um orçamento!
+            </p>
+            <div class="md:flex gap-x-8 justify-between items-center mt-12">
+                <div class="relative z-0 mb-6 w-full group md:w-1/2 flex flex-col">
+                    <input aria-label="Por favor, insira o nome"
+                           class="block py-2.5 px-0 w-full text-base text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-rose-500 focus:outline-none focus:ring-0 focus:border-rose-600 peer"
+                           id="name" placeholder="" tabindex="0" type="text"/>
+                    <label
+                        class="absolute text-base font-medium text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-rose-600 peer-focus:dark:text-rose-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
+                        for="name">
+                        Nome completo
+                    </label>
+                </div>
+                <div class="relative z-0 mb-6 w-full group md:w-1/2 flex flex-col">
+                    <input aria-label="Por favor, insira o e-mail"
+                           class="block py-2.5 px-0 w-full text-base text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-rose-500 focus:outline-none focus:ring-0 focus:border-rose-600 peer"
+                           id="email" placeholder="" tabindex="0" type="email"/>
+                    <label
+                        class="absolute text-base font-medium text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-rose-600 peer-focus:dark:text-rose-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
+                        for="email">
+                        Endereço de E-mail
+                    </label>
+                </div>
+            </div>
+            <div class="md:flex gap-x-8 justify-between items-center mt-8">
+                <div class="relative z-0 mb-6 w-full group md:w-1/2 flex flex-col">
+                    <input aria-label="Por favor, insira o nome da empresa"
+                           class="block py-2.5 px-0 w-full text-base text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-rose-500 focus:outline-none focus:ring-0 focus:border-rose-600 peer"
+                           id="company" placeholder="" tabindex="0" type="text"/>
+                    <label
+                        class="absolute text-base font-medium text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-rose-600 peer-focus:dark:text-rose-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
+                        for="company">
+                        Nome da Empresa
+                    </label>
+                </div>
+                <div class="relative z-0 mb-6 w-full group md:w-1/2 flex flex-col">
+                    <input aria-label="Por favor, insira o nome do país"
+                           class="block py-2.5 px-0 w-full text-base text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-rose-500 focus:outline-none focus:ring-0 focus:border-rose-600 peer"
+                           id="country" placeholder="" tabindex="0" type="text"/>
+                    <label
+                        class="absolute text-base font-medium text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-rose-600 peer-focus:dark:text-rose-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
+                        for="country">
+                        País
+                    </label>
+                </div>
+            </div>
+            <div>
+                <div class="relative z-0 mb-6 w-full group flex flex-col mt-8">
+                        <textarea aria-label="Descreva sua mensagem"
+                                  class="block py-2.5 px-0 w-full text-base text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-rose-500 focus:outline-none focus:ring-0 focus:border-rose-600 peer"
+                                  id="message" placeholder="" role="textbox" tabindex="0"></textarea>
+                    <label
+                        class="absolute text-base font-medium text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-rose-600 peer-focus:dark:text-rose-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
+                        for="message">
+                        Mensagem
+                    </label>
+                </div>
+            </div>
+            <p class="text-xs leading-3 text-gray-600 mt-4">
+                Ao clicar em enviar, você concorda com nossos termos de serviço, política de privacidade e como
+                usamos
+                os dados conforme declarado.
+            </p>
+            <div class="flex items-center justify-center w-full">
+                <button
+                    class="mt-9 text-base font-semibold leading-none text-white py-4 px-10 bg-rose-700 rounded hover:bg-rose-600 focus:ring-2 focus:ring-offset-2 focus:ring-rose-700 focus:outline-none"
+                    id="buttonSendContact" type="button">
+                    Enviar
+                </button>
+            </div>
+        </form>
+    </div>
+
+    <footer class="pt-12">
+        <div class="relative dark:bg-gray-900" id="footer">
+            <div aria-label="footer"
+                 class="focus:outline-none border-t border-b border-gray-200 dark:border-gray-700 py-16"
+                 tabindex="0">
+                <div class="mx-auto container px-4 xl:px-12 2xl:px-4">
+                    <div class="lg:flex">
+                        <div class="w-full lg:w-1/2 mb-16 lg:mb-0 flex">
+                            <div class="w-full lg:w-1/2 px-6">
+                                <ul>
+                                    <li>
+                                        <a class="focus:outline-none focus:underline  text-xs lg:text-sm leading-none hover:text-brand dark:hover:text-brand text-gray-800 dark:text-gray-50"
+                                           href="#services">
+                                            Serviços
+                                        </a>
+                                    </li>
+                                    <li class="mt-6">
+                                        <a class="focus:outline-none focus:underline text-xs lg:text-sm leading-none hover:text-brand dark:hover:text-brand text-gray-800 dark:text-gray-50"
+                                           href="#budgets">
+                                            Orçamentos
+                                        </a>
+                                    </li>
+                                    <li class="mt-6">
+                                        <a class="focus:outline-none focus:underline text-xs lg:text-sm leading-none hover:text-brand dark:hover:text-brand text-gray-800 dark:text-gray-50"
+                                           href="#contact">
+                                            Contato
+                                        </a>
+                                    </li>
+                                    <li class="mt-6">
+                                        <a class="focus:outline-none focus:underline text-xs lg:text-sm leading-none hover:text-brand dark:hover:text-brand text-gray-800 dark:text-gray-50"
+                                           href="#about">
+                                            Sobre Nós
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="w-full lg:w-1/2 px-6">
+                                <ul>
+                                    <li class="mt-6">
+                                        <a class="focus:outline-none focus:underline text-xs lg:text-sm leading-none hover:text-brand dark:hover:text-brand text-gray-800 dark:text-gray-50"
+                                           href="javascript:void(0)">
+                                            Blog
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="w-full lg:w-1/2 flex">
+                            <div class="w-full lg:w-1/2 px-6">
+                                <ul>
+                                    <li>
+                                        <a class="focus:underline focus:outline-none text-xs lg:text-sm leading-none hover:text-brand dark:hover:text-brand text-gray-800 dark:text-gray-50"
+                                           href="javascript:void(0)">
+                                            Politica de Privacidade
+                                        </a>
+                                    </li>
+                                    <li class="mt-6">
+                                        <a class="focus:underline focus:outline-none text-xs lg:text-sm leading-none hover:text-brand dark:hover:text-brand text-gray-800 dark:text-gray-50"
+                                           href="javascript:void(0)">
+                                            Termos de Serviço
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="w-full lg:w-1/2 px-6 flex flex-col justify-between">
+                                <div class="relative w-36">
+                                    <select aria-label="select box"
+                                            class="w-full focus:ring-2 focus:ring-offset-2 focus:ring-gray-500 focus:outline-none py-2 appearance-none flex items-center h-12 border rounded border-gray-700 dark:border-gray-50 text-sm leading-5 dark:bg-gray-900 dark:text-gray-50"
+                                            onchange="switchMode(this)">
+                                        <option selected value="auto">Auto</option>
+                                        <option value="light">Light</option>
+                                        <option value="dark">Dark</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="py-16 flex flex-col justify-center items-center">
+                <a aria-label="home link" class="focus:outline-none" href="javascript:void(0)" role="link"
+                   tabindex="0">
+                    <svg class="fill-rose-700" fill="none" height="44" viewBox="0 0 53 44" width="52"
+                         xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M23.2997 0L52.0461 28.6301V44H38.6311V34.1553L17.7522 13.3607L13.415 13.3607L13.415 44H0L0 0L23.2997 0ZM38.6311 15.2694V0L52.0461 0V15.2694L38.6311 15.2694Z"></path>
+                    </svg>
+                </a>
+                <p class="focus:outline-none mt-6 text-xs lg:text-sm leading-none text-gray-900 dark:text-gray-50"
+                   tabindex="0">
+                    &copy; 2022 - <span id="year"></span> - <a class="hover:text-rose-700"
+                                                               href="https://codingstep.com.br">Codingstep</a>.
+                    All
+                    Rights Reserved.
+                </p>
+            </div>
+        </div>
+    </footer>
+</div>
+
+<div class="fixed bottom-4 right-6 md:bottom-6 md:right-8">
+    <a class="w-12 h-12 inline-flex justify-center items-center bg-rose-700 hover:bg-rose-600 text-gray-50 rounded-full"
+       href="#top" id="backToTop">
+        <i class="fa-solid fa-angle-up text-2xl"></i>
+    </a>
+</div>
+
+<a href="https://twitter.com/Ukraine" id="ukraine" rel="nofollow" target="_blank"
+   title="We stand with Ukraine. Nós estamos com a Ucrânia"></a>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+<script src="../index.js"></script>
+</body>
+
+</html>
